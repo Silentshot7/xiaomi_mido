@@ -191,3 +191,11 @@ ro.max.fling_velocity=20000
 
 # Zygote
 zygote.critical_window.minute=10
+
+# USB Debuggig
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+ro.control_privapp_permissions=log
+
