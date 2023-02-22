@@ -21,37 +21,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := lineage_mido
+PRODUCT_NAME := bootleg_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
-#RiceDroid Officical Flag
-RICE_DEVICE := mido
-RICE_OFFICIAL := true
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bootleggers.maintainer=errornouske
 
-#RiceDroid Flags
-RICE_MAINTAINER := Vastolorde
-#WITH_GMS := true
-#TARGET_CORE_GMS := true
-#TARGET_CORE_GMS_EXTRAS := true
-TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := false
-TARGET_SUPPORTS_QUICK_TAP := false
+# Some Build Flags
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-SUSHI_BOOTANIMATION := 1080
-TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_USE_GOOGLE_TELEPHONY := false
-TARGET_ENABLE_PIXEL_GBOARD_PADDINGS := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_USES_BLUR := false
+TARGET_USES_AOSP_CHARGER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
