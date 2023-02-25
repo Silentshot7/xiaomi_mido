@@ -10,4 +10,6 @@
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
     <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+     <!-- Unlock ripple animation -->
+    <bool name="config_enableUnlockRippleAnimation">false</bool>
 </resources>

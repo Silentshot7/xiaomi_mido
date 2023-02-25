@@ -33,7 +33,11 @@
     <!-- The CPU temperature sensor path, defaults to empty -->
     <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
 
+     <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">true</bool>
 
+     <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 
 </resources>
 
