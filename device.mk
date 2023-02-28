@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
  # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Call recording
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml 
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
