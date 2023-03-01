@@ -28,7 +28,7 @@
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
-    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">true</bool>
 
     <!-- Show battery icon in the QS Panel instead of in the header -->
     <bool name="config_batteryInQSPanel">false</bool>

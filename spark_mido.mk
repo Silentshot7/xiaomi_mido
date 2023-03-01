@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common Bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common Spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := bootleg_mido
+PRODUCT_NAME := spark_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -35,8 +35,7 @@ BOARD_VENDOR := Xiaomi
 
 # Maintainer Prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bootleggers.maintainer=errornouske
-
+      ro.spark.maintainer=errornouske
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -44,6 +43,7 @@ TARGET_USES_BLUR := false
 TARGET_USES_AOSP_CHARGER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

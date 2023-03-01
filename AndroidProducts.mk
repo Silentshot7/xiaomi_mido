@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2019 The bootlegOS Project
+# Copyright (C) 2017-2019 The sparkOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_mido.mk
+    $(LOCAL_DIR)/spark_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_mido-user \
-    bootleg_mido-userdebug \
-    bootleg_mido-eng
+    spark_mido-user \
+    spark_mido-userdebug \
+    spark_mido-eng

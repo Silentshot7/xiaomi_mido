@@ -599,4 +599,13 @@
 
     <!-- Display low battery warning when battery level dips to this value -->
     <integer name="config_lowBatteryWarningLevel">15</integer>
+
+    <!-- Whether to enable lockscreen charging info settings -->
+    <bool name="config_enable_charging_info">true</bool>
+
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
+     <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
