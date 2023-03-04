@@ -472,3 +472,7 @@ PRODUCT_COPY_FILES += \
 # KProfiles
 PRODUCT_PACKAGES += \
     KProfiles
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
