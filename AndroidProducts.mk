@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2019 The sparkOS Project
+# Copyright (C) 2017-2019 The aosOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_mido.mk
+    $(LOCAL_DIR)/aosp_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_mido-user \
-    spark_mido-userdebug \
-    spark_mido-eng
+    aosp_mido-user \
+    aosp_mido-userdebug \
+    aosp_mido-eng
