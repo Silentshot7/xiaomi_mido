@@ -129,6 +129,10 @@ ro.build.shutdown_timeout=2
 # (b/183612348): Enable skia reduceOpsTaskSplitting
 renderthread.skia.reduceopstasksplitting=true
 
+# Spark-OS
+ro.spark.maintainer= サティヤム
+ro.spark.maintainer.username= errornouske
+
 # SurfaceFlinger
 debug.sf.disable_client_composition_cache=1
 debug.sf.early_phase_offset_ns=1500000
