@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common VoidUI stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Nitrogen stuff.
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := aosp_mido
+PRODUCT_NAME := nitrogen_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -38,13 +38,16 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := false
 TARGET_USES_AOSP_CHARGER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_QUICK_TAP := true
 
-# VoidUI Maintainer Flags
-VOID_MAINTAINER := errornouske
-CUSTOM_BUILD_TYPE := UNOFFICIAL
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=bluejay \
+    PRIVATE_BUILD_DESC="bluejay-user 13 TQ2A.230305.008.E1 9677224 release-keys"
+
+BUILD_FINGERPRINT := google/bluejay/bluejay:13/TQ2A.230305.008.E1/9677224:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

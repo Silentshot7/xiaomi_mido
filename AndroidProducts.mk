@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mido.mk
+    $(LOCAL_DIR)/nitrogen_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_mido-user \
-    aosp_mido-userdebug \
-    aosp_mido-eng
+    nitrogen_mido-user \
+    nitrogen_mido-userdebug \
+    nitrogen_mido-eng
