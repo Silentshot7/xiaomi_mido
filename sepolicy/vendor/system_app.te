@@ -9,6 +9,9 @@ binder_call(system_app vold)
 # aosp fm
 allow system_app fm_radio_device:chr_file { ioctl open read };
 
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
+
 # XiaomiParts
 allow system_app {
     kcal_dev
