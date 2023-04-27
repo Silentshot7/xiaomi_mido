@@ -184,7 +184,8 @@ persist.hwc.enable_vds=1
 ro.vendor.qti.cgroup_follow.enable=true \
 persist.vendor.qti.inputopts.enable=true \
 persist.vendor.qti.inputopts.movetouchslop=0.6 \
-ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0 \
+ro.surface_flinger.supports_background_blur=1
 
 # Higher fling velocities
 # for smoother scrolling and better responsiveness
