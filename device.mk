@@ -19,6 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, vendor/xiaomi/mido/google/google.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# PixelExtended Launcher
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := glance12
+WIDGETS_IN_LAUNCHER_PREVIEW := true
+USE_LOCAL_ICON_OVERRIDES := true
+POPUP_MATERIAL_U :=true
+ENABLE_REGION_SAMPLING := true
+ENABLE_ENFORCED_ROUNDED_CORNERS := true
+ALWAYS_USE_HARDWARE_OPTIMIZATION_FOR_FOLDER_ANIMATIONS := true
+
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_SUFFIX := _64
 

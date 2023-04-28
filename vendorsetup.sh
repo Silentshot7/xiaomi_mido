@@ -20,6 +20,10 @@ echo 'Cloning KProfiles'
 # KProfiles
 git clone https://github.com/CannedShroud/android_packages_apps_KProfiles packages/apps/KProfiles
 
+echo 'Cloning Pixel Extended launcher'
+# KProfiles
+git clone https://github.com/StudioKeys/vendor_PixelLauncherExtended.git -b 13 vendor/
+
 
 #echo 'Cloning lineage OS Gallery'
 #rm -rf packages/apps/Gallery && git clone https://github.com/LineageOS/android_packages_apps_Gallery2.git -b lineage-20.0 packages/apps/Gallery2
