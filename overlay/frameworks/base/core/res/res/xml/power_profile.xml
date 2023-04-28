@@ -30,4 +30,8 @@
     <item name="cpu.idle">1.6</item>
     <item name="battery.capacity">4100</item>
     <item name="bluetooth.controller.voltage">3300</item>
+    
+      <!-- Additional power used when screen is ambient mode -->
+    <item name="ambient.on">0.1</item>
+    
 </device>
